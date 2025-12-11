@@ -17,7 +17,7 @@ drone-ws-target-tracking-rs/
 ```
 
 
-## Building the Project Binariee
+## Building the Project
 
 ```shell
 tar -xzf drone-ws-target-tracking-rs.tar.gz

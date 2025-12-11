@@ -124,7 +124,7 @@ async fn run_client_session(
 
     // Send initial message
     ws_sink
-        .send(Message::Text(initial_message.to_string()))
+        .send(Message::Text(initial_message.to_string().into()))
         .await
         .context("Failed to send initial message")?;
 
