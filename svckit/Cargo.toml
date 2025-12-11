@@ -1,0 +1,11 @@
+[package]
+name = "svckit"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Service configuration toolkit for address and TLS configuration"
+
+[dependencies]
+serde = { workspace = true }
+thiserror = { workspace = true }

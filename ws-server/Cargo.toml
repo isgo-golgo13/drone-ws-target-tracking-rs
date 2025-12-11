@@ -1,0 +1,27 @@
+[package]
+name = "ws-server"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "TLS WebSocket server with strategy-based packet dispatch"
+
+[[bin]]
+name = "ws-server"
+path = "src/main.rs"
+
+[dependencies]
+svckit = { workspace = true }
+protocol = { workspace = true }
+
+tokio = { workspace = true }
+tokio-tungstenite = { workspace = true }
+tokio-rustls = { workspace = true }
+rustls = { workspace = true }
+rustls-pemfile = { workspace = true }
+futures-util = { workspace = true }
+
+async-trait = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+anyhow = { workspace = true }
