@@ -115,7 +115,7 @@ async fn run_client_session(
         .await
         .context("WebSocket handshake failed")?;
 
-    info!("[CLIENT] ✅ Connected to {}", ws_url);
+    info!("[CLIENT] Connected to {}", ws_url);
 
     let (mut ws_sink, mut ws_source) = ws_stream.split();
 
@@ -198,7 +198,7 @@ async fn run_interactive_client(config: AddrConfig) -> Result<()> {
         .await
         .context("WebSocket handshake failed")?;
 
-    info!("[CLIENT] ✅ Connected to {}", ws_url);
+    info!("[CLIENT] Connected to {}", ws_url);
     info!("[CLIENT] Type messages to send. Commands:");
     info!("  !red <msg>    - Send RED urgency packet");
     info!("  !yellow <msg> - Send YELLOW urgency packet");

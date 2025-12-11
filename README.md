@@ -39,3 +39,30 @@ cargo run -p ws-server --release
 cargo run -p ws-client --release -- -i
 ```
 
+
+### Using the root Makefile
+
+```shell
+# Local development
+make certs
+make release
+make run-server  # Terminal 1
+make run-client  # Terminal 2
+
+# Docker
+make up-build
+make logs
+
+
+make help           # Show all targets
+make release        # Build release binaries
+make certs          # Generate TLS certs with mkcert
+make docker-build   # Build both Docker images
+make up             # Start services (auto-generates certs)
+make down           # Stop services
+make logs           # Tail logs
+make check          # fmt + clippy + test
+make ci-full        # Full CI pipeline
+```
+
+
